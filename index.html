@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crypto Clicker Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="shopButton" class="shop-button">Shop</button>
+  <button id="sellButton" class="sell-button">Sell</button>
+  <button id="upgradesButton" class="upgrades-button">Upgrades</button>
+  <button id="saveButton" class="save-button" onclick="saveGame()">Save Game</button>
+  <button id="loadButton" class="load-button" onclick="loadGame()">Load Game</button>
+  <button id="resetButton" class="reset-button">Reset Game</button>
+  <div class="center-container">
+    <div id="coin-container"></div>
+    <h1 id="cryptoAmount">0.0000</h1>
+    <p id="cryptoWorth" class="small-text">($0)</p>
+    <p id="moneyDisplay" class="money-text">$0.00</p>
+  </div>
+
+  <div id="shopPage" class="shop-page">
+    <button id="closeShopButton" class="shop-button">Close Shop</button>
+    <div class="shop-item">
+      <img src="images/gpu.jpg.png" alt="Rigs">
+      <p>Rigs</p>
+      <p class="price" id="rigPrice">$12</p>
+      <button class="buy-button" onclick="buyRig()">Buy</button>
+    </div>
+    <div class="shop-item">
+      <img src="images/4090.png" alt="RTX 4090">
+      <p>RTX 4090</p>
+      <p class="price" id="4090Price">$1200</p>
+      <button class="buy-button" onclick="buyRTX4090()">Buy</button>
+    </div>
+    <div class="shop-item">
+      <img src="images/Threadripper.png" alt="Threadripper">
+      <p>Threadripper</p>
+      <p class="price" id="ThreadripperPrice">$2100</p>
+      <button class="buy-button" onclick="buyThreadripper()">Buy</button>
+    </div>
+    <div class="shop-item">
+      <img src="images/Worker.png" alt="Miner">
+      <p>Miner</p>
+      <p class="price" id="WorkerPrice">$1000</p>
+      <button class="buy-button" onclick="buyWorker()">Buy</button>
+    </div>
+  </div>
+  <div id="upgradesPage" class="upgrade-page">
+    <button id="closeUpgradesButton" class="shop-button">Close Upgrades</button>
+    <div class="upgrade-item">
+    <div class="blockchain-click1">
+      <p>Faster Miner</p>
+      <p class="price" id="Fasterminer">$10</p>
+      <button class="buy-button" onclick="buyFasterMinerUpgrade()">Buy</button>
+    </div>
+    <div class="upgrade-item">
+      <p>Alt Computer</p>
+      <p class="price" id="altcomputer">$100</p>
+      <button class="buy-button" onclick="buyAltComputer()">Buy</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
